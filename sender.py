@@ -15,7 +15,7 @@ MESSAGE = "Put your message here! "
 
 
 # Given a number, send the message
-def sendTo(num):
+def send_to(num):
 
     # Ensure that message sent to number
     try:
@@ -48,10 +48,10 @@ def send_to_excel():
 
         if df.values[i][1] is not np.nan and len(str(df.values[i][1])) > 9: # cell
             print('cell:' + strip_number(df.values[i][1]))
-            sendTo(strip_number(df.values[i][1]))
+            send_to(strip_number(df.values[i][1]))
         elif df.values[i][0] is not np.nan and len(str(df.values[i][0])) > 9: # home phone
             print('home:' + strip_number(df.values[i][0]))
-            sendTo(strip_number(df.values[i][0]))
+            send_to(strip_number(df.values[i][0]))
         else:
             print("Does not have number")
 
