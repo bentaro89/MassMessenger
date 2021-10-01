@@ -1,2 +1,2 @@
 # MassMessenger
-Text multiple numbers at once
+Text a message to a mass amount of numbers
